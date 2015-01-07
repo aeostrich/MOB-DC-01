@@ -71,4 +71,3 @@ for index in 1...100 {
         println(index)
     }
 }
-
