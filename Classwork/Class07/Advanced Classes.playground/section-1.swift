@@ -128,6 +128,96 @@ john.name = "John"
 // - Create a class for each module 
 // - Instentiate 3 different car model per maker with defauls for each of those modules as the baseline. (ex: Toyota Corolla (prototype) has highway wheels, Toyota Supra has racing wheels, etc).
 
+class WheelType {
+    var description: String
+    
+    init() {
+        description = "Boring wheels"
+    }
+    
+    init(description: String) {
+        self.description = description
+    }
+    
+    func clone() -> WheelType {
+        return WheelType(description: self.description)
+    }
+}
+
+class WheelSize {
+    var diameter: Int
+    
+    init() {
+        diameter = 15
+    }
+    
+    init(diameter: Int) {
+        self.diameter = diameter
+    }
+    
+    func clone() -> WheelSize {
+        return WheelSize(diameter: self.diameter)
+    }
+}
+
+class Wheels {
+    var wheelType: WheelType
+    var wheelSize: WheelSize
+    
+    init() {
+        wheelType = WheelType()
+        wheelSize = WheelSize()
+    }
+    
+    init(wheelType: WheelType, wheelSize: WheelSize) {
+        self.wheelType = wheelType.clone()
+        self.wheelSize = wheelSize.clone()
+    }
+    
+    func clone() -> Wheels {
+        return Wheels(wheelType: self.wheelType, wheelSize: self.wheelSize)
+    }
+}
+
+class Car {
+    var wheels: Wheels
+    
+    init() {
+        wheels = Wheels()
+    }
+    
+    init(wheels: Wheels) {
+        self.wheels = wheels.clone()
+    }
+    
+    func printDescription() {
+        println("This car has \(wheels.wheelType.description) with a diameter of \(wheels.wheelSize.diameter).")
+    }
+    
+    func clone() -> Car {
+        return Car(wheels: self.wheels)
+    }
+}
+
+// Let the corolla take the default values
+var corolla = Car()
+
+// The Camry will be slightly more suped up
+var camry = corolla.clone()
+camry.wheels.wheelType.description = "Luxury tires"
+camry.wheels.wheelSize.diameter = 18
+
+// The Supra will be a bit ridiculous
+var supra = corolla.clone()
+supra.wheels.wheelType.description = "Sport tires"
+supra.wheels.wheelSize.diameter = 20
+
+// Let's print out the results
+corolla.printDescription()
+camry.printDescription()
+supra.printDescription()
+println("\n\n")
+
 
 // Singleton: the singleton pattern ensures that only one object of a particular class is ever created. All further references to objects of the singleton class refer to the same underlying instance. A great example of this is the app delegate that our applicaitons start with. Our apps are instances of App. 
 // Another example is the notification center. We only need one central notification center to control all of our broadcasted messages.
@@ -149,3 +239,69 @@ class SingletonClass {
 let instance = SingletonClass.shared
 
 // TO DO: Logging mechanism is a great example of a singleton usecase. Create a logging mechanism to log information and display information. Hint: this may require either the use of an array or dictionary, which we can't gone into great detail about.
+
+class TheLog {
+    class var shared: TheLog {
+        
+        struct Static {
+            static let instance: TheLog = TheLog()
+        }
+        
+        return Static.instance
+    }
+    
+    var log = [String: [String]]()
+    
+    init() {
+        // Initialize logs with empty arrays
+        self.log["Error"] = []
+        self.log["Display"] = []
+    }
+    
+    func addLog(#logName: String, info: String) {
+        if var thisLog = self.log[logName] {
+            println("Current log: \(thisLog)")
+            // I couldn't use the += operator here because
+            // self.log[logName] is technically an optional
+            // array and not an array by itself
+            self.log[logName] = thisLog + [info]
+            println("Log after added entry: \(self.log[logName])")
+        }
+        else {
+            println("Error, \(logName) log is unavailable")
+        }
+    }
+    
+    func printLogs() {
+        for (name, log) in self.log {
+            println("Contents of log: \(name)")
+            println("Log entries: \(log)")
+            for entry in log {
+                println("\t" + entry)
+            }
+        }
+    }
+}
+
+// Initializing three instances of the log
+let log1 = TheLog.shared
+let log2 = TheLog.shared
+let log3 = TheLog.shared
+
+// Log some errors with the first log
+log1.addLog(logName: "Error", info: "Pants are not available")
+log1.addLog(logName: "Error", info: "Oh no, things are happening!")
+log1.addLog(logName: "Error", info: "AAAAAAAHHHHHHH!!!!!!")
+
+// Log some display information with the second log
+log2.addLog(logName: "Display", info: "The image is too big for the screen?")
+log2.addLog(logName: "Display", info: "Well, now it's too small")
+log2.addLog(logName: "Display", info: "The device's resolution is big?")
+
+// Let's print the logs from the third instance
+println("\n\nLogs for log1")
+log1.printLogs()
+println("\n\nLogs for log2")
+log2.printLogs()
+println("\n\nLogs for log3")
+log3.printLogs()
