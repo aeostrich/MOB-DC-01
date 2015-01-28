@@ -90,6 +90,18 @@ class Player {
         return result
     }
     
+    // Returns an array of strings indicating the current
+    //  hand images
+    func printHandImages() -> Array<String> {
+        var result: Array<String> = []
+        
+        for card in self.hand {
+            result += [card.cardImage()]
+        }
+        
+        return result
+    }
+    
     // Return string indicating value of hand
     func printTotal() -> String {
         // Initialize result to string of base total

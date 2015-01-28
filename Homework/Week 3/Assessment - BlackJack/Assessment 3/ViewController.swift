@@ -33,6 +33,32 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var betAmount: UITextField!
     
+    // Dealer Card Images
+    @IBOutlet weak var dealerCardImage1: UIImageView!
+    @IBOutlet weak var dealerCardImage2: UIImageView!
+    @IBOutlet weak var dealerCardImage3: UIImageView!
+    @IBOutlet weak var dealerCardImage4: UIImageView!
+    @IBOutlet weak var dealerCardImage5: UIImageView!
+    @IBOutlet weak var dealerCardImage6: UIImageView!
+    
+    // User Card Images
+    @IBOutlet weak var userCardImage1: UIImageView!
+    @IBOutlet weak var userCardImage2: UIImageView!
+    @IBOutlet weak var userCardImage3: UIImageView!
+    @IBOutlet weak var userCardImage4: UIImageView!
+    @IBOutlet weak var userCardImage5: UIImageView!
+    @IBOutlet weak var userCardImage6: UIImageView!
+    
+    // Setup arrays for card images
+    var dealerCardImages: Array<UIImageView> = []
+    var userCardImages: Array<UIImageView> = []
+    // Indicates the number of cards currently seen
+    var numDealerCards: Int = 0
+    var numUserCards: Int = 0
+    // Indicates current hand images
+    var dealerHandImages: Array<String> = []
+    var userHandImages: Array<String> = []
+    
     // Number of decks to use and the initial pot
     let numDecks: Int = 1
     let initialPot: Int = 100
@@ -69,11 +95,13 @@ class ViewController: UIViewController {
         
         // Declare a winner
         var winnerOutput = self.game.declareWinner()
-        println(winnerOutput)
         
         // Update labels
         self.userOutput.text = self.userOutput.text + winnerOutput.userOutput
         self.dealerOutput.text = self.dealerOutput.text + winnerOutput.dealerOutput
+        
+        // Allow user to enter a new bet
+        self.betAmount.userInteractionEnabled = true
     }
     
     
@@ -89,6 +117,9 @@ class ViewController: UIViewController {
         
         // Update pot
         self.userPotLabel.text = "Pot: $" + String(self.game.pot)
+        
+        // Update Card Images
+        self.updateCardImages()
     }
     
     // Start New Game button starts a new game
@@ -103,6 +134,12 @@ class ViewController: UIViewController {
 
         // Only start the game if the user has enough money to bet
         if (self.game.pot > 0) && (self.game.currentBet <= self.game.pot) {
+            // Disable user interaction with betAmount textField
+            self.betAmount.userInteractionEnabled = false
+            
+            // Clear the cards
+            self.clearCardImages()
+            
             // Mark that the game is happening
             self.gameOver = false
             
@@ -153,10 +190,112 @@ class ViewController: UIViewController {
         }
     }
     
+    // Initialize card image arrays
+    func initializeCardImageArrays() {
+        // Dealer Card Images
+        self.dealerCardImages += [dealerCardImage1]
+        self.dealerCardImages += [dealerCardImage2]
+        self.dealerCardImages += [dealerCardImage3]
+        self.dealerCardImages += [dealerCardImage4]
+        self.dealerCardImages += [dealerCardImage5]
+        self.dealerCardImages += [dealerCardImage6]
+        
+        // User Card Images
+        self.userCardImages += [userCardImage1]
+        self.userCardImages += [userCardImage2]
+        self.userCardImages += [userCardImage3]
+        self.userCardImages += [userCardImage4]
+        self.userCardImages += [userCardImage5]
+        self.userCardImages += [userCardImage6]
+    }
+    
+    // Clear Card Images
+    func clearCardImages() {
+        // Dealer card images
+        self.numDealerCards = 0
+        self.dealerHandImages = []
+        for i in 0..<self.dealerCardImages.count {
+            self.dealerCardImages[i].hidden = true
+            self.dealerCardImages[i].image = nil
+        }
+        
+        // User card images
+        self.numUserCards = 0
+        self.userHandImages = []
+        for i in 0..<self.userCardImages.count {
+            self.userCardImages[i].hidden = true
+            self.userCardImages[i].image = nil
+        }
+    }
+    
+    // Add Card Image
+    // Player can be "Dealer" or "User"
+    func addCardImage(player: String, card: String) {
+        // Error checking
+        if !contains(["Dealer", "User"], player) {
+            exit(0)
+        }
+        
+        var image: UIImageView
+        if player == "Dealer" {
+            if self.numDealerCards < 6 {
+                // Grab the desired UIImage
+                image = self.dealerCardImages[self.numDealerCards]
+                self.numDealerCards++
+                
+                // Add the image with an animation!
+                self.animateCardImage(image, card: card)
+            }
+        }
+        else {
+            if self.numUserCards < 6 {
+                // Grab the desired UIImage
+                image = self.userCardImages[self.numUserCards]
+                self.numUserCards++
+                
+                // Add the image with an animation!
+                self.animateCardImage(image, card: card)
+            }
+        }
+    }
+    
+    
+    // Animate Adding Card
+    func animateCardImage(image: UIImageView, card: String) {
+        // Add the image with an animation!
+        UIImageView.transitionWithView(image, duration: 1.0, options:                 UIViewAnimationOptions.TransitionCurlDown, animations: {
+            image.hidden = false
+            image.image = UIImage(named: card)
+            }, completion: nil)
+    }
+    
+    // Update Card Images
+    func updateCardImages() {
+        // Grab the new hand images
+        let newDealerHandImages = self.game.dealer.printHandImages()
+        let newUserHandImages = self.game.user.printHandImages()
+        
+        // Add new Dealer cards
+        for cardImage in newDealerHandImages[self.dealerHandImages.count..<newDealerHandImages.count] {
+            self.addCardImage("Dealer", card: cardImage)
+        }
+        
+        // Add new User cards
+        for cardImage in newUserHandImages[self.userHandImages.count..<newUserHandImages.count] {
+            self.addCardImage("User", card: cardImage)
+        }
+        
+        // Update hand images
+        self.dealerHandImages = newDealerHandImages
+        self.userHandImages = newUserHandImages
+    }
+
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.initializeCardImageArrays()
         self.updateDisplay()
     }
 

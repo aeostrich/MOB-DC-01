@@ -67,17 +67,65 @@
                                             <rect key="frame" x="8" y="8" width="359" height="109"/>
                                         </variation>
                                     </textView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4TY-Tp-dlD">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <variation key="widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="159" y="31" width="56" height="63"/>
+                                        </variation>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yOc-eA-V5b">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <variation key="widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="188" y="31" width="56" height="63"/>
+                                        </variation>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dKL-iv-Chw">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <variation key="widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="213" y="31" width="56" height="63"/>
+                                        </variation>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XQ2-Ai-gur">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <variation key="widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="241" y="31" width="56" height="63"/>
+                                        </variation>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mqs-dm-eSu">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <variation key="widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="265" y="31" width="56" height="63"/>
+                                        </variation>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="r7e-fF-MBj">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <variation key="widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="293" y="31" width="56" height="63"/>
+                                        </variation>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <variation key="default">
                                     <mask key="subviews">
                                         <exclude reference="4Kp-uX-6yP"/>
+                                        <exclude reference="4TY-Tp-dlD"/>
+                                        <exclude reference="yOc-eA-V5b"/>
+                                        <exclude reference="dKL-iv-Chw"/>
+                                        <exclude reference="XQ2-Ai-gur"/>
+                                        <exclude reference="mqs-dm-eSu"/>
+                                        <exclude reference="r7e-fF-MBj"/>
                                     </mask>
                                 </variation>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="16" y="94" width="375" height="125"/>
                                     <mask key="subviews">
                                         <include reference="4Kp-uX-6yP"/>
+                                        <include reference="4TY-Tp-dlD"/>
+                                        <include reference="yOc-eA-V5b"/>
+                                        <include reference="dKL-iv-Chw"/>
+                                        <include reference="XQ2-Ai-gur"/>
+                                        <include reference="mqs-dm-eSu"/>
+                                        <include reference="r7e-fF-MBj"/>
                                     </mask>
                                 </variation>
                             </view>
@@ -117,17 +165,65 @@
                                             <rect key="frame" x="8" y="8" width="359" height="109"/>
                                         </variation>
                                     </textView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wUQ-fl-rzm">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <variation key="widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="160" y="31" width="56" height="63"/>
+                                        </variation>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wex-es-CnN">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <variation key="widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="189" y="31" width="56" height="63"/>
+                                        </variation>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hQD-1m-TO4">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <variation key="widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="214" y="31" width="56" height="63"/>
+                                        </variation>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aw3-0k-Hdb">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <variation key="widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="242" y="31" width="56" height="63"/>
+                                        </variation>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nhm-1j-7wm">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <variation key="widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="266" y="31" width="56" height="63"/>
+                                        </variation>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zdd-FF-Hjc">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <variation key="widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="294" y="31" width="56" height="63"/>
+                                        </variation>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <variation key="default">
                                     <mask key="subviews">
                                         <exclude reference="R7o-FY-BQx"/>
+                                        <exclude reference="wUQ-fl-rzm"/>
+                                        <exclude reference="wex-es-CnN"/>
+                                        <exclude reference="hQD-1m-TO4"/>
+                                        <exclude reference="aw3-0k-Hdb"/>
+                                        <exclude reference="nhm-1j-7wm"/>
+                                        <exclude reference="zdd-FF-Hjc"/>
                                     </mask>
                                 </variation>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="16" y="256" width="375" height="125"/>
                                     <mask key="subviews">
                                         <include reference="R7o-FY-BQx"/>
+                                        <include reference="wUQ-fl-rzm"/>
+                                        <include reference="wex-es-CnN"/>
+                                        <include reference="hQD-1m-TO4"/>
+                                        <include reference="aw3-0k-Hdb"/>
+                                        <include reference="nhm-1j-7wm"/>
+                                        <include reference="zdd-FF-Hjc"/>
                                     </mask>
                                 </variation>
                             </view>
@@ -215,9 +311,21 @@
                     <navigationItem key="navigationItem" id="kye-4f-Ber"/>
                     <connections>
                         <outlet property="betAmount" destination="2NJ-r9-0qx" id="7eF-If-uEJ"/>
+                        <outlet property="dealerCardImage1" destination="4TY-Tp-dlD" id="pIi-a1-9oN"/>
+                        <outlet property="dealerCardImage2" destination="yOc-eA-V5b" id="ACm-AA-d9k"/>
+                        <outlet property="dealerCardImage3" destination="dKL-iv-Chw" id="j7T-J4-td6"/>
+                        <outlet property="dealerCardImage4" destination="XQ2-Ai-gur" id="bxX-zZ-rUx"/>
+                        <outlet property="dealerCardImage5" destination="mqs-dm-eSu" id="r8M-Jc-cjB"/>
+                        <outlet property="dealerCardImage6" destination="r7e-fF-MBj" id="sur-kG-oMr"/>
                         <outlet property="dealerOutput" destination="4Kp-uX-6yP" id="V0z-jX-z9O"/>
                         <outlet property="dealerScoreLabel" destination="gjq-2f-8Bh" id="QJJ-dx-318"/>
                         <outlet property="greenBox" destination="VLj-XE-fcY" id="xlJ-zR-fkt"/>
+                        <outlet property="userCardImage1" destination="wUQ-fl-rzm" id="5Oq-4V-jPY"/>
+                        <outlet property="userCardImage2" destination="wex-es-CnN" id="vK6-Ia-HKd"/>
+                        <outlet property="userCardImage3" destination="hQD-1m-TO4" id="z4z-1B-1yc"/>
+                        <outlet property="userCardImage4" destination="aw3-0k-Hdb" id="f0a-6d-haB"/>
+                        <outlet property="userCardImage5" destination="nhm-1j-7wm" id="32A-Xw-JKw"/>
+                        <outlet property="userCardImage6" destination="zdd-FF-Hjc" id="jU9-h7-CDn"/>
                         <outlet property="userOutput" destination="R7o-FY-BQx" id="bEE-lc-njg"/>
                         <outlet property="userPotLabel" destination="tND-TK-dzc" id="UaF-8z-hzF"/>
                         <outlet property="userScoreLabel" destination="MAF-2p-D1e" id="Yn4-Lz-h1c"/>

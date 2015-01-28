@@ -70,6 +70,6 @@ class Card {
         
         // Grab the first letter from the suit name and make it lowercase
         let firstSuitChar = self.suit.lowercaseString[self.suit.startIndex]
-        return "\(self.name)\(firstSuitChar).jpg"
+        return "\(name)\(firstSuitChar).gif"
     }
 }
