@@ -10,8 +10,16 @@ import Foundation
 protocol BlackJack {
     // Require a deal method
     // Require a first hand method
+    func deal()
+    func firstHand()
 }
 
 class CardGame: BlackJack {
+    func deal() {
+        
+    }
     
+    func firstHand() {
+        
+    }
 }

@@ -27,7 +27,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var redBox: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
 
 
