@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         initiateSwipeHorizontal()
+        initiateTap()
     }
     
     // ------------------------------------------------------
@@ -33,6 +34,23 @@ class ViewController: UIViewController {
     }
     
     // ------------------------------------------------------
+    // ===
+    // Tap
+    // ===
+    
+    func initiateTap() {
+        let tap = UITapGestureRecognizer(target: self, action: "tapped:")
+        tap.numberOfTapsRequired = 1
+        self.swipeView.addGestureRecognizer(tap)
+    }
+    
+    func tapped(send: UITapGestureRecognizer) {
+        self.performSegueWithIdentifier("showArrayTable", sender: self)
+    }
+    
+    // ------------------------------------------------------
+    
+
     
     /*
     TODO one: Hook up a swipeable area on the home screen that must present a modal dialog when swiped. You must create the modal dialog and present it in CODE (not the storyboard).
