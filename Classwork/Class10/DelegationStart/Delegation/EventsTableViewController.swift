@@ -16,8 +16,15 @@ class EventsTableViewController: UITableViewController, EventProtocol {
     var arrEvents:[Event] = []
     
     func addEvent(newEvent: Event) {
-        arrEvents.append(newEvent)
+        if newEvent.name != "" {
+            arrEvents.append(newEvent)
+        }
     }
+    
+    // ---------------------------------------------------
+    // ==================
+    // To to Add Event VC
+    // ==================
 
     @IBAction func goToAddEventVC(sender: AnyObject) {
         // Initialize add VC
@@ -31,22 +38,10 @@ class EventsTableViewController: UITableViewController, EventProtocol {
         self.presentViewController(navigationController, animated:true, completion: nil)
     }
     
-    @IBAction func editRows(sender: AnyObject) {
-        // If editing
-        if self.tableView.editing{
-            self.tableView.setEditing(false, animated: false);
-            self.editButton.style = UIBarButtonItemStyle.Plain;
-            self.editButton.title = "Edit";
-        }
-        // If not editing
-        else{
-            self.tableView.setEditing(true, animated: true);
-            self.editButton.title = "Done";
-            self.editButton.style =  UIBarButtonItemStyle.Done;
-        }
-
-    }
-    
+    // ---------------------------------------------------
+    // =========================
+    // Standard Table View Stuff
+    // =========================
 
     // MARK: - Table view data source
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -57,7 +52,7 @@ class EventsTableViewController: UITableViewController, EventProtocol {
         return arrEvents.count
     }
 
-    
+    // Define how table cells are populated
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("eventCell", forIndexPath: indexPath) as? UITableViewCell ?? UITableViewCell(style: .Subtitle, reuseIdentifier: "eventCell")
         
@@ -70,12 +65,40 @@ class EventsTableViewController: UITableViewController, EventProtocol {
         return cell
     }
     
+    // ---------------------------------------------------
+    // ==================
+    // Table Cell Editing
+    // ==================
+    
+    
+    // Enable Row Editing
+    @IBAction func editRows(sender: AnyObject) {
+        // If editing
+        if self.tableView.editing{
+            self.tableView.setEditing(false, animated: false);
+            self.editButton.style = UIBarButtonItemStyle.Plain;
+            self.editButton.title = "Edit";
+        }
+            // If not editing
+        else{
+            self.tableView.setEditing(true, animated: true);
+            self.editButton.title = "Done";
+            self.editButton.style =  UIBarButtonItemStyle.Done;
+        }
+        
+    }
+    
+    // Allow deleting with left swipe
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == .Delete {
             self.arrEvents.removeAtIndex(indexPath.row)
             tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
         }
     }
+    
+    // -----------------------
+    // When we're in edit mode
+    // -----------------------
     
     // Say we can move all of the cells!
     override func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
