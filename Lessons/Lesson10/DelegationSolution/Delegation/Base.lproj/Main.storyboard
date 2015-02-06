@@ -14,7 +14,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="eventCell" textLabel="VFm-4M-WH6" detailTextLabel="Ch7-Dj-BTB" style="IBUITableViewCellStyleSubtitle" id="fWE-83-ew4">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="eventCell" textLabel="VFm-4M-WH6" detailTextLabel="xOw-7C-oPf" style="IBUITableViewCellStyleSubtitle" id="fWE-83-ew4">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fWE-83-ew4" id="Wc6-xc-xkT">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -25,7 +25,7 @@
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ch7-Dj-BTB">
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xOw-7C-oPf">
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -41,9 +41,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Events" id="DQ7-nw-jZD">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="oxZ-hu-BaZ">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="EYB-6x-cpg">
                             <connections>
-                                <action selector="addEvent:" destination="r7E-4d-zM6" id="6PH-bt-4BJ"/>
+                                <action selector="showAddEventModal:" destination="r7E-4d-zM6" id="vaZ-TR-uqR"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
