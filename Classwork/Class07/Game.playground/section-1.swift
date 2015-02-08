@@ -67,7 +67,7 @@ class Match {
                 println("\t\(self.player1.name) attacks with \(attack.attackName), does \(attack.dmg) points of damage\n")
                 self.player2.health -= attack.dmg
             }
-            // Player 2 attacjs on odd rounds
+            // Player 2 attacks on odd rounds
             else {
                 let attack = self.player2.attack()
                 println("\t\(self.player2.name) attacks with \(attack.attackName), does \(attack.dmg) points of damage\n")

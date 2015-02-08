@@ -9,11 +9,32 @@
 import UIKit
 
 class FirstViewController: UIViewController {
+    @IBOutlet weak var mySquare: UIView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        UIView.animateWithDuration(1.5, animations: {
+            self.mySquare.backgroundColor = UIColor.redColor()
+            // alpha == transparency
+            // VERY EXPENSIVE, YO
+            self.mySquare.alpha = 0.5
+        })
+        
 
         // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func swipeSquareRight(sender: UISwipeGestureRecognizer) {
+        UIView.animateWithDuration(1.5, animations: {
+            self.mySquare.backgroundColor = UIColor.greenColor()
+            self.mySquare.alpha = 1.0
+        })
+    }
+    @IBAction func swipeSquareLeft(sender: UISwipeGestureRecognizer) {
+        UIView.animateWithDuration(1.5, animations: {
+            self.mySquare.backgroundColor = UIColor.redColor()
+            self.mySquare.alpha = 0.5
+        })
     }
 
     override func didReceiveMemoryWarning() {

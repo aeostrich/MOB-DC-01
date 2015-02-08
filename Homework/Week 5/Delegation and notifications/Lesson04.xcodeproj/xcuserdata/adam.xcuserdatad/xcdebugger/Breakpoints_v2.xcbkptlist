@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Lesson04/MapViewController.swift"
+            timestampString = "445120879.95889"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "103"
+            endingLineNumber = "103"
+            landmarkName = "tableView(_:cellForRowAtIndexPath:)"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Lesson04.MapViewController.(tableView (Lesson04.MapViewController) -&gt; (ObjectiveC.UITableView, cellForRowAtIndexPath : ObjectiveC.NSIndexPath) -&gt; ObjectiveC.UITableViewCell).(closure #1)"
+                  moduleName = "Lesson04"
+                  urlString = "file:///Users/adam/Repo/MOB-DC-01/Homework/Week%205/Delegation%20and%20notifications/Lesson04/MapViewController.swift"
+                  timestampString = "444894350.366698"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "35">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "reabstraction thunk helper from @callee_owned (@owned Swift.String, @owned Swift.String) -&gt; (@owned (Swift.String, Swift.String)) to @callee_owned (@in (Swift.String, Swift.String)) -&gt; (@out (Swift.String, Swift.String))"
+                  moduleName = "Lesson04"
+                  urlString = "file:///Users/adam/Repo/MOB-DC-01/Homework/Week%205/Delegation%20and%20notifications/Lesson04/MapViewController.swift"
+                  timestampString = "444894350.366907"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "62"
+                  endingLineNumber = "62"
+                  offsetFromSymbolStart = "18">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Lesson04/ArrayViewController.swift"
+            timestampString = "445116223.764871"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "ArrayViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Lesson04.ArrayViewController.inputTextField.setter : ObjectiveC.UITextField"
+                  moduleName = "Lesson04"
+                  urlString = "file:///Users/adam/Repo/MOB-DC-01/Homework/Week%205/Delegation%20and%20notifications/Lesson04/ArrayViewController.swift"
+                  timestampString = "445116033.65784"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Lesson04.ArrayViewController.inputTextField.materializeForSet : ObjectiveC.UITextField"
+                  moduleName = "Lesson04"
+                  urlString = "file:///Users/adam/Repo/MOB-DC-01/Homework/Week%205/Delegation%20and%20notifications/Lesson04/ArrayViewController.swift"
+                  timestampString = "445116033.658086"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Lesson04.ArrayViewController.init (Lesson04.ArrayViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;ObjectiveC.NSBundle&gt;) -&gt; Lesson04.ArrayViewController"
+                  moduleName = "Lesson04"
+                  urlString = "file:///Users/adam/Repo/MOB-DC-01/Homework/Week%205/Delegation%20and%20notifications/Lesson04/ArrayViewController.swift"
+                  timestampString = "445116033.658491"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Lesson04.ArrayViewController.init (Lesson04.ArrayViewController.Type)() -&gt; Lesson04.ArrayViewController"
+                  moduleName = "Lesson04"
+                  urlString = "file:///Users/adam/Repo/MOB-DC-01/Homework/Week%205/Delegation%20and%20notifications/Lesson04/ArrayViewController.swift"
+                  timestampString = "445116033.658807"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Lesson04.ArrayViewController.init (Lesson04.ArrayViewController.Type)(coder : ObjectiveC.NSCoder) -&gt; Lesson04.ArrayViewController"
+                  moduleName = "Lesson04"
+                  urlString = "file:///Users/adam/Repo/MOB-DC-01/Homework/Week%205/Delegation%20and%20notifications/Lesson04/ArrayViewController.swift"
+                  timestampString = "445116033.659064"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "19">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

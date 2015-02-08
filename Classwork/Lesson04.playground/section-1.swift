@@ -58,15 +58,13 @@ if number % 2 == 0 {
 }
 
 // TODO: The first fibonacci number is 0, the second is 1, the third is 1, the fourth is two, the fifth is 3, the sixth is 5, etc. The Xth fibonacci number is the sum of the X-1th fibonacci number and the X-2th fibonacci number. Print the 37th fibonacci number below
-var num1 = 0
-var num2 = 1
-var newNum = 0
-for i in 1...36 {
-    newNum = num1 + num2
-    num1 = num2
-    num2 = newNum
+var fibNum = 37, current = 0, next = 1, result = 0
+for index in 2...fibNum {
+    result = current + next
+    current = next
+    next = result
 }
-println("The 37th fibonacci number is \(newNum)")
+println("Fibonacci number \(fibNum) is \(result)")
 
 // TODO: Print out "Hello {whatever the value of name is}, your name is {however long the string name is} characters long!. Use countElements()
 println("Hello \(name), your name is \(countElements(name)) characters long")

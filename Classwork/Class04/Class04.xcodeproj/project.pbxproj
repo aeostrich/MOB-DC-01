@@ -37,6 +37,7 @@
 		6671C94C1A5B634500BEC6A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6671C94D1A5B634500BEC6A0 /* Class04Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Class04Tests.swift; sourceTree = "<group>"; };
 		6671C9571A5B635A00BEC6A0 /* IntroSwift.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = IntroSwift.playground; sourceTree = "<group>"; };
+		66C6A6851A5CFE0B0010FDE3 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +86,7 @@
 				6671C9401A5B634500BEC6A0 /* LaunchScreen.xib */,
 				6671C9351A5B634500BEC6A0 /* Supporting Files */,
 				6671C9571A5B635A00BEC6A0 /* IntroSwift.playground */,
+				66C6A6851A5CFE0B0010FDE3 /* MyPlayground.playground */,
 			);
 			path = Class04;
 			sourceTree = "<group>";
@@ -407,6 +409,7 @@
 				6671C9531A5B634500BEC6A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6671C9541A5B634500BEC6A0 /* Build configuration list for PBXNativeTarget "Class04Tests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +418,7 @@
 				6671C9561A5B634500BEC6A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

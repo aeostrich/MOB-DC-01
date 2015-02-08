@@ -230,6 +230,3 @@ func findFibonacci(place: Int) -> Int {
 }
 findFibonacci(4)
 findFibonacci(9)
-
-
-

@@ -69,32 +69,30 @@ func fibSum(times: Int) {
     }
     println(sum)
 }
-fibSum(6)
+fibSum(20)
 
 // TODO: Write a function that takes in a number and prints out whether it is prime, composite or neither.
 func prime(num: Int) -> Bool {
-    if num < 1 {
+    if num <= 1 {
         return false
     }
-    else if contains([1,2,3], num) {
+    else if contains([2,3], num) {
         return true
     }
-    
-    var isPrime = true
     
     for i in 2...(num/2) {
         for j in 2...(num/2) {
             if i*j == num {
-                isPrime = false
+                return false
             }
         }
     }
     
-    return isPrime
+    return true
 }
 
 func eval(num: Int) {
-    if num < 1 {
+    if num <= 1 {
         println("The number \(num) is neither composite nor prime")
     }
     else if prime(num) {
@@ -119,23 +117,21 @@ func fibVals(num: Int) {
 //fibVals(20)
 
 // TODO: Write a function that takes in two numbers, a bill amount and an optional tip percentage (represented as a float, e.g. .2 = 20% tip). Return a tuple with the total bill amount and the tip amount (if included).
-func tipCalculate(bill: Float, tip: Float?) -> (total: Float, tip: Float) {
-    var tipAmount: Float = 0
+func tipCalculate(bill: Float, tip: Float? = nil) -> (total: Float, tip: Float) {
+    var tipAmount: Float = 0.0
     if let percent = tip {
-        println(percent)
         tipAmount = percent * bill
-        println(tipAmount)
     }
     
     return (bill + tipAmount, tipAmount)
 }
-var x = tipCalculate(42.73, 0)
+var x = tipCalculate(42.73, tip: 0)
 println("Total is \(x.total), tip is \(x.tip)")
 
-var y = tipCalculate(19.50, nil)
+var y = tipCalculate(19.50)
 println("Total is \(y.total), tip is \(y.tip)")
 
-var z = tipCalculate(33.96, 0.15)
+var z = tipCalculate(33.96, tip: 0.15)
 println("Total is \(z.total), tip is \(z.tip)")
 
 

@@ -10,6 +10,10 @@ import UIKit
 
 class SecondViewController: UIViewController {
 
+    @IBAction func goBackToFirstVC(sender: AnyObject) {
+        self.navigationController?.popViewControllerAnimated(true)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

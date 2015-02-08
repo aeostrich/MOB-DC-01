@@ -13,6 +13,8 @@
 		66CE35B81A770BEF000CACA2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66CE35B71A770BEF000CACA2 /* Images.xcassets */; };
 		66CE35BB1A770BEF000CACA2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66CE35B91A770BEF000CACA2 /* LaunchScreen.xib */; };
 		66CE35C71A770BEF000CACA2 /* Class09_DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CE35C61A770BEF000CACA2 /* Class09_DemoTests.swift */; };
+		66CE35D11A771AED000CACA2 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CE35D01A771AED000CACA2 /* ThirdViewController.swift */; };
+		66CE35D31A771AF6000CACA2 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CE35D21A771AF6000CACA2 /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		66CE35C01A770BEF000CACA2 /* Class09 DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Class09 DemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		66CE35C51A770BEF000CACA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		66CE35C61A770BEF000CACA2 /* Class09_DemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Class09_DemoTests.swift; sourceTree = "<group>"; };
+		66CE35D01A771AED000CACA2 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		66CE35D21A771AF6000CACA2 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,8 @@
 				66CE35B71A770BEF000CACA2 /* Images.xcassets */,
 				66CE35B91A770BEF000CACA2 /* LaunchScreen.xib */,
 				66CE35AE1A770BEF000CACA2 /* Supporting Files */,
+				66CE35D21A771AF6000CACA2 /* SecondViewController.swift */,
+				66CE35D01A771AED000CACA2 /* ThirdViewController.swift */,
 			);
 			path = "Class09 Demo";
 			sourceTree = "<group>";
@@ -212,7 +218,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66CE35D31A771AF6000CACA2 /* SecondViewController.swift in Sources */,
 				66CE35B31A770BEF000CACA2 /* ViewController.swift in Sources */,
+				66CE35D11A771AED000CACA2 /* ThirdViewController.swift in Sources */,
 				66CE35B11A770BEF000CACA2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -405,6 +413,7 @@
 				66CE35CC1A770BEF000CACA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		66CE35CD1A770BEF000CACA2 /* Build configuration list for PBXNativeTarget "Class09 DemoTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +422,7 @@
 				66CE35CF1A770BEF000CACA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
