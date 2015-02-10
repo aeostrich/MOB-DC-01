@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Autolayout" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GHn-Ea-Fcm" userLabel="Red">
+                                <rect key="frame" x="410" y="50" width="85" height="75"/>
+                                <color key="backgroundColor" red="1" green="0.026927507010000001" blue="0.1629563131" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="GNH-Rk-1nQ"/>
+                                    <constraint firstAttribute="width" constant="85" id="xy5-mO-rSM"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GSZ-t9-HI9" userLabel="Yellow">
+                                <rect key="frame" x="36" y="40" width="111" height="95"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="111" id="2ZD-wc-ksK"/>
+                                    <constraint firstAttribute="height" constant="95" id="ipu-nv-NL2"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ClY-bi-vro" userLabel="Purple">
+                                <rect key="frame" x="49" y="185" width="85" height="75"/>
+                                <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="FfZ-5M-0Qo"/>
+                                    <constraint firstAttribute="width" constant="104" id="r8F-8D-C91"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="FfZ-5M-0Qo"/>
+                                        <exclude reference="r8F-8D-C91"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qGg-hy-FW6">
+                                <rect key="frame" x="114" y="494" width="373" height="31"/>
+                                <color key="backgroundColor" red="0.60557865420000001" green="0.83185369320000002" blue="0.78554326100000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="1lL-ch-nTQ"/>
+                                    <constraint firstAttribute="width" constant="373" id="drT-r6-b8h"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="15"/>
+                                <state key="normal" title="Increase distance between Ghost and Pacman">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="IncreaseDistanceBetweenPacmanAndGhost:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tvb-iD-PkZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ClY-bi-vro" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="33" id="0To-F7-9lc"/>
+                            <constraint firstItem="GHn-Ea-Fcm" firstAttribute="centerY" secondItem="GSZ-t9-HI9" secondAttribute="centerY" constant="212" id="182-1c-NFR"/>
+                            <constraint firstAttribute="centerX" secondItem="qGg-hy-FW6" secondAttribute="centerX" id="2Zd-rD-TmG"/>
+                            <constraint firstItem="GSZ-t9-HI9" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="8cO-mJ-XqZ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="qGg-hy-FW6" secondAttribute="bottom" constant="75" id="9g9-mb-tqj"/>
+                            <constraint firstItem="GHn-Ea-Fcm" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="BYQ-zN-wx5"/>
+                            <constraint firstItem="GHn-Ea-Fcm" firstAttribute="width" secondItem="ClY-bi-vro" secondAttribute="width" id="HQc-hf-jAf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GHn-Ea-Fcm" secondAttribute="trailing" priority="999" constant="89" id="SQI-Tx-a98"/>
+                            <constraint firstItem="ClY-bi-vro" firstAttribute="top" secondItem="GSZ-t9-HI9" secondAttribute="bottom" constant="50" id="bpm-Gg-yD8"/>
+                            <constraint firstItem="GHn-Ea-Fcm" firstAttribute="height" secondItem="ClY-bi-vro" secondAttribute="height" id="l7K-eT-17O"/>
+                            <constraint firstItem="GSZ-t9-HI9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="o4V-t3-b7e"/>
+                            <constraint firstItem="GHn-Ea-Fcm" firstAttribute="width" secondItem="ClY-bi-vro" secondAttribute="width" id="pv6-6d-A9g"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="182-1c-NFR"/>
+                                <exclude reference="HQc-hf-jAf"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="greenButton" destination="qGg-hy-FW6" id="Vga-ap-0mZ"/>
+                        <outlet property="purpleGhost" destination="ClY-bi-vro" id="aVx-dI-CfI"/>
+                        <outlet property="verticalSpacingBetweenPurpleGhostAndPacman" destination="bpm-Gg-yD8" id="bvH-WP-HSS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
