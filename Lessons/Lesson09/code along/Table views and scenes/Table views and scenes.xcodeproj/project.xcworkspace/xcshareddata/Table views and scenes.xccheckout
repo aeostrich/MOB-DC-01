@@ -5,20 +5,20 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>D2DC1494-80F5-43AA-95B1-BFF56EAC391F</string>
+	<string>1364FB92-9C31-4AD1-8EFE-37E70926D1CC</string>
 	<key>IDESourceControlProjectName</key>
-	<string>Programmatic Autolayout</string>
+	<string>Table views and scenes</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>10A52EA4FBADB6C746B5260032017E5923CCC696</key>
 		<string>https://github.com/aeostrich/MOB-DC-01</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Classwork/Class14/Programmatic Autolayout/Programmatic Autolayout.xcodeproj</string>
+	<string>Lessons/Lesson09/code along/Table views and scenes/Table views and scenes.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>10A52EA4FBADB6C746B5260032017E5923CCC696</key>
-		<string>../../../../..</string>
+		<string>../../../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/aeostrich/MOB-DC-01</string>
