@@ -1,6 +1,7 @@
 // Playground - noun: a place where people can play
 
 import UIKit
+import Darwin
 
 var str = "Hello, playground"
 
@@ -600,7 +601,6 @@ class Calculator {
    
     func errorOut() {
         NSNotificationCenter.defaultCenter().postNotificationName("calculationError", object: nil)
-        self.reset()
     }
     
     // ----------------------------------------------------------------------
@@ -739,11 +739,15 @@ calc.retrieveCurrentValue()
 calc.pressNumber(3)
 calc.printCurrentValue()
 
-calc.performNewCalculation("logy")
-calc.previousValue
+calc.performUnaryOperation("+/-")
 calc.printCurrentValue()
 
-calc.pressNumber(2)
-calc.printCurrentValue()
 
-calc.finishCalculation()
+func pants(this: Int, that: Int) {
+    println("\(this) and \(that)")
+}
+
+
+var x: Double = 0.0699268119435104
+
+x % 1 > 0.0

@@ -184,6 +184,7 @@ var rightLeg: UIView!
                 case 1:
                     self.head = UIView(frame: CGRect(x: self.gallowPlank.frame.maxX-20, y: self.gallowPlank.frame.maxY, width: 40, height: self.hangmanView.frame.height/10))
                     self.head.layer.borderWidth = 5
+                    self.head.layer.cornerRadius = 20
                     self.head.layer.borderColor = UIColor.blackColor().CGColor
                     self.head.autoresizingMask = UIViewAutoresizing.FlexibleLeftMargin | UIViewAutoresizing.FlexibleRightMargin | UIViewAutoresizing.FlexibleBottomMargin | UIViewAutoresizing.FlexibleHeight
                     self.hangmanView.addSubview(self.head)
