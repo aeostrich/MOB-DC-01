@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Flat_Files" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DqN-tT-IjB">
+                                <rect key="frame" x="244" y="74" width="112" height="30"/>
+                                <state key="normal" title="View Saved Text">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="loadData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cpw-yp-qZ7"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="lalalalala" translatesAutoresizingMaskIntoConstraints="NO" id="WLL-br-f22">
+                                <rect key="frame" x="180" y="112" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="rg8-i0-t1c"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="WLL-br-f22" secondAttribute="bottom" constant="360" id="FPO-8U-eI1"/>
+                            <constraint firstAttribute="centerY" secondItem="DqN-tT-IjB" secondAttribute="centerY" id="JVb-He-wCU"/>
+                            <constraint firstAttribute="centerX" secondItem="WLL-br-f22" secondAttribute="centerX" id="M2z-ND-kKx"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="WLL-br-f22" secondAttribute="bottom" constant="360" id="NAw-gI-85l"/>
+                            <constraint firstItem="WLL-br-f22" firstAttribute="top" secondItem="DqN-tT-IjB" secondAttribute="bottom" constant="8" id="Qys-bR-e6f"/>
+                            <constraint firstAttribute="centerX" secondItem="DqN-tT-IjB" secondAttribute="centerX" id="bsi-Yv-Sc6"/>
+                            <constraint firstAttribute="centerX" secondItem="WLL-br-f22" secondAttribute="centerX" id="bvf-8X-dsF"/>
+                            <constraint firstItem="WLL-br-f22" firstAttribute="top" secondItem="DqN-tT-IjB" secondAttribute="bottom" constant="8" id="dbq-aK-LLJ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="DqN-tT-IjB" secondAttribute="bottom" constant="496" id="kQN-mc-AdZ"/>
+                            <constraint firstItem="DqN-tT-IjB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="54" id="zAc-Dp-yDY"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Qys-bR-e6f"/>
+                                <exclude reference="bvf-8X-dsF"/>
+                                <exclude reference="JVb-He-wCU"/>
+                                <exclude reference="FPO-8U-eI1"/>
+                                <exclude reference="kQN-mc-AdZ"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="WLL-br-f22" id="5BL-Oe-SUc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
