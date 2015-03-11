@@ -26,6 +26,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6645A2841AA543F50070ECAE /* NetworkingPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = NetworkingPlayground.playground; sourceTree = "<group>"; };
 		6665CE431AA5432F0054C8CF /* Networking Examples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Networking Examples.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6665CE471AA5432F0054C8CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6665CE481AA5432F0054C8CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +84,7 @@
 				6665CE4F1AA5432F0054C8CF /* Images.xcassets */,
 				6665CE511AA543300054C8CF /* LaunchScreen.xib */,
 				6665CE461AA5432F0054C8CF /* Supporting Files */,
+				6645A2841AA543F50070ECAE /* NetworkingPlayground.playground */,
 			);
 			path = "Networking Examples";
 			sourceTree = "<group>";
@@ -407,6 +409,7 @@
 				6665CE641AA543300054C8CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6665CE651AA543300054C8CF /* Build configuration list for PBXNativeTarget "Networking ExamplesTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +418,7 @@
 				6665CE671AA543300054C8CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

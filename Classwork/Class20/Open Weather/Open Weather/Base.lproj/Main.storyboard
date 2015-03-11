@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Open_Weather" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="City" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oGA-Q7-RXz">
+                                <rect key="frame" x="16" y="28" width="268" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="State" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PkM-fI-HGI">
+                                <rect key="frame" x="316" y="28" width="268" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eev-vk-MQ1">
+                                <rect key="frame" x="245" y="285" width="111" height="30"/>
+                                <state key="normal" title="Update Weather">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="updateWeather:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rkW-vf-q2s"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading data..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h2B-gZ-AcG">
+                                <rect key="frame" x="242" y="111" width="116" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PkM-fI-HGI" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="0h5-oA-g4o"/>
+                            <constraint firstAttribute="centerX" secondItem="eev-vk-MQ1" secondAttribute="centerX" constant="-0.5" id="8Bv-BN-Elc"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="oGA-Q7-RXz" secondAttribute="bottom" constant="542" id="AsG-yL-Z0y"/>
+                            <constraint firstItem="PkM-fI-HGI" firstAttribute="leading" secondItem="oGA-Q7-RXz" secondAttribute="trailing" constant="32" id="Cnq-s4-quV"/>
+                            <constraint firstItem="h2B-gZ-AcG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="91" id="FuI-qo-6Rc"/>
+                            <constraint firstItem="oGA-Q7-RXz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="GXO-ot-ssy"/>
+                            <constraint firstAttribute="centerX" secondItem="h2B-gZ-AcG" secondAttribute="centerX" id="IkY-oQ-kEO"/>
+                            <constraint firstAttribute="centerY" secondItem="h2B-gZ-AcG" secondAttribute="centerY" id="MLJ-BV-8IK"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="h2B-gZ-AcG" secondAttribute="bottom" constant="468" id="Mlk-hP-bFJ"/>
+                            <constraint firstItem="oGA-Q7-RXz" firstAttribute="height" secondItem="PkM-fI-HGI" secondAttribute="height" id="Pda-ta-47I"/>
+                            <constraint firstItem="h2B-gZ-AcG" firstAttribute="top" secondItem="PkM-fI-HGI" secondAttribute="bottom" constant="53" id="XS1-Nh-LGM"/>
+                            <constraint firstItem="oGA-Q7-RXz" firstAttribute="width" secondItem="PkM-fI-HGI" secondAttribute="width" id="djs-0J-ER1"/>
+                            <constraint firstItem="PkM-fI-HGI" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="lNl-sg-rgP"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="PkM-fI-HGI" secondAttribute="bottom" constant="542" id="mkm-1Y-aDV"/>
+                            <constraint firstItem="oGA-Q7-RXz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="oVF-JZ-If9"/>
+                            <constraint firstItem="eev-vk-MQ1" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="265" id="qFI-JY-j1A"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="eev-vk-MQ1" secondAttribute="bottom" constant="285" id="zTe-0i-0EU"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Pda-ta-47I"/>
+                                <exclude reference="FuI-qo-6Rc"/>
+                                <exclude reference="MLJ-BV-8IK"/>
+                                <exclude reference="AsG-yL-Z0y"/>
+                                <exclude reference="Mlk-hP-bFJ"/>
+                                <exclude reference="mkm-1Y-aDV"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="cityField" destination="oGA-Q7-RXz" id="qge-BR-80s"/>
+                        <outlet property="stateField" destination="PkM-fI-HGI" id="5Aj-Rq-cev"/>
+                        <outlet property="weatherDescription" destination="h2B-gZ-AcG" id="fp4-xq-bOY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
