@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="tI6-ca-7dj">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="The_Tweeting" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Enter text..." translatesAutoresizingMaskIntoConstraints="NO" id="BBF-5J-EOc">
+                                <rect key="frame" x="16" y="20" width="568" height="228"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CiV-6B-Huj">
+                                <rect key="frame" x="16" y="279" width="568" height="33"/>
+                                <color key="backgroundColor" red="0.31892044990000001" green="0.59389795479999996" blue="0.83185369320000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
+                                <state key="normal" title="Do Tweeting">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="doTweeting:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iPp-Ir-cYE"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Category" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x98-cA-VuT">
+                                <rect key="frame" x="16" y="346" width="568" height="30"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jCI-Rn-wBX">
+                                <rect key="frame" x="16" y="384" width="568" height="33"/>
+                                <color key="backgroundColor" red="0.60557865420000001" green="0.83185369320000002" blue="0.78554326100000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
+                                <state key="normal" title="Read Tweetings">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="readTweetings:" destination="BYZ-38-t0r" eventType="touchUpInside" id="69g-UA-jch"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="x98-cA-VuT" firstAttribute="top" secondItem="CiV-6B-Huj" secondAttribute="bottom" constant="34" id="2pz-MJ-F30"/>
+                            <constraint firstItem="BBF-5J-EOc" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="3Nj-9U-cSP"/>
+                            <constraint firstItem="jCI-Rn-wBX" firstAttribute="top" secondItem="CiV-6B-Huj" secondAttribute="bottom" constant="8" id="4sZ-Wi-N1m"/>
+                            <constraint firstItem="CiV-6B-Huj" firstAttribute="top" secondItem="BBF-5J-EOc" secondAttribute="bottom" constant="31" id="5EM-cQ-Z18"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="jCI-Rn-wBX" secondAttribute="bottom" constant="183" id="CZH-cL-cMZ"/>
+                            <constraint firstItem="jCI-Rn-wBX" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="GPt-tY-hft"/>
+                            <constraint firstItem="x98-cA-VuT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="HAl-XB-exI"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="BBF-5J-EOc" secondAttribute="bottom" constant="346" id="JHB-0g-sAB"/>
+                            <constraint firstItem="jCI-Rn-wBX" firstAttribute="top" secondItem="x98-cA-VuT" secondAttribute="bottom" constant="8" id="O6U-T5-OCr"/>
+                            <constraint firstItem="BBF-5J-EOc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="TqP-m9-X3S"/>
+                            <constraint firstItem="BBF-5J-EOc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="a0I-zY-Jb9"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="jCI-Rn-wBX" secondAttribute="bottom" constant="247" id="aUi-Op-sHN"/>
+                            <constraint firstItem="jCI-Rn-wBX" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="dWQ-Si-7MS"/>
+                            <constraint firstAttribute="centerX" secondItem="CiV-6B-Huj" secondAttribute="centerX" id="evy-pT-QDp"/>
+                            <constraint firstItem="CiV-6B-Huj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="fju-Yf-z6t"/>
+                            <constraint firstItem="jCI-Rn-wBX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="guw-Dm-JB1"/>
+                            <constraint firstItem="x98-cA-VuT" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="lT5-nL-vcx"/>
+                            <constraint firstItem="jCI-Rn-wBX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="nSY-Ne-d5D"/>
+                            <constraint firstItem="CiV-6B-Huj" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="qmt-bu-Nqo"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="evy-pT-QDp"/>
+                                <exclude reference="4sZ-Wi-N1m"/>
+                                <exclude reference="JHB-0g-sAB"/>
+                                <exclude reference="aUi-Op-sHN"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="category" destination="x98-cA-VuT" id="Dxw-pb-mfA"/>
+                        <outlet property="tweetings" destination="BBF-5J-EOc" id="buS-lo-ptb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--User View Controller-->
+        <scene sceneID="B06-sO-ON7">
+            <objects>
+                <viewController id="tI6-ca-7dj" customClass="UserViewController" customModule="The_Tweeting" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MhY-gS-2Vr"/>
+                        <viewControllerLayoutGuide type="bottom" id="oXm-bI-8gT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ctP-yi-LNZ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feedback label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JD3-Gk-MBh">
+                                <rect key="frame" x="241" y="28" width="119" height="23"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iyt-ft-BYU">
+                                <rect key="frame" x="16" y="59" width="568" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="vy4-ZT-XUZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hkj-Cn-sYz">
+                                <rect key="frame" x="16" y="97" width="568" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="wNY-qh-HzK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dB3-DK-kG0">
+                                <rect key="frame" x="16" y="218" width="568" height="30"/>
+                                <color key="backgroundColor" red="0.31892044990000001" green="0.59389795479999996" blue="0.83185369320000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="TX6-Uc-7TE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
+                                <state key="normal" title="Register">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="doTweeting:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uZE-31-625"/>
+                                    <action selector="pressRegister:" destination="tI6-ca-7dj" eventType="touchUpInside" id="lEh-Ls-4hi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P4j-bn-16X">
+                                <rect key="frame" x="16" y="164" width="568" height="30"/>
+                                <color key="backgroundColor" red="0.60557865420000001" green="0.83185369320000002" blue="0.78554326100000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="8hQ-8g-lvd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="doTweeting:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MOY-Pr-jcz"/>
+                                    <action selector="pressLogin:" destination="tI6-ca-7dj" eventType="touchUpInside" id="zjW-4g-jTR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dB3-DK-kG0" firstAttribute="trailing" secondItem="ctP-yi-LNZ" secondAttribute="trailingMargin" id="0cQ-5T-7dZ"/>
+                            <constraint firstItem="Hkj-Cn-sYz" firstAttribute="trailing" secondItem="ctP-yi-LNZ" secondAttribute="trailingMargin" id="4sm-28-o9d"/>
+                            <constraint firstItem="dB3-DK-kG0" firstAttribute="leading" secondItem="ctP-yi-LNZ" secondAttribute="leadingMargin" id="7lB-Iv-1ei"/>
+                            <constraint firstItem="P4j-bn-16X" firstAttribute="top" secondItem="Hkj-Cn-sYz" secondAttribute="bottom" constant="37" id="89i-6X-RBl"/>
+                            <constraint firstItem="iyt-ft-BYU" firstAttribute="trailing" secondItem="ctP-yi-LNZ" secondAttribute="trailingMargin" id="EqD-RX-sDx"/>
+                            <constraint firstItem="dB3-DK-kG0" firstAttribute="top" secondItem="P4j-bn-16X" secondAttribute="bottom" constant="24" id="Fn0-LE-byL"/>
+                            <constraint firstItem="P4j-bn-16X" firstAttribute="leading" secondItem="ctP-yi-LNZ" secondAttribute="leadingMargin" id="MCb-BO-908"/>
+                            <constraint firstItem="JD3-Gk-MBh" firstAttribute="top" secondItem="MhY-gS-2Vr" secondAttribute="bottom" constant="8" id="Px7-uS-UAg"/>
+                            <constraint firstItem="Hkj-Cn-sYz" firstAttribute="top" secondItem="iyt-ft-BYU" secondAttribute="bottom" constant="8" id="Q2X-GV-DTQ"/>
+                            <constraint firstItem="iyt-ft-BYU" firstAttribute="top" secondItem="JD3-Gk-MBh" secondAttribute="bottom" constant="8" id="cPK-ta-TG3"/>
+                            <constraint firstAttribute="centerX" secondItem="JD3-Gk-MBh" secondAttribute="centerX" id="cfL-Lo-Qhi"/>
+                            <constraint firstItem="iyt-ft-BYU" firstAttribute="leading" secondItem="ctP-yi-LNZ" secondAttribute="leadingMargin" id="k7W-Yh-ocP"/>
+                            <constraint firstItem="P4j-bn-16X" firstAttribute="trailing" secondItem="ctP-yi-LNZ" secondAttribute="trailingMargin" id="sar-V9-xb1"/>
+                            <constraint firstItem="Hkj-Cn-sYz" firstAttribute="leading" secondItem="ctP-yi-LNZ" secondAttribute="leadingMargin" id="zfT-uU-N4R"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="feedback" destination="JD3-Gk-MBh" id="SHY-Vl-80e"/>
+                        <outlet property="passwordField" destination="Hkj-Cn-sYz" id="Het-a0-g2x"/>
+                        <outlet property="usernameField" destination="iyt-ft-BYU" id="aH2-CR-5EG"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="login" id="Yeh-gS-Tjq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KeO-IO-jxq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-333" y="289"/>
+        </scene>
+    </scenes>
+</document>
